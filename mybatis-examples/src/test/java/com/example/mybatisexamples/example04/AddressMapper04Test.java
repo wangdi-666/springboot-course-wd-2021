@@ -16,5 +16,11 @@ public class AddressMapper04Test {
             log.debug("{}", a);
         }
     }
+    @Test
+    public void list_test2() {
+        for (AddressDTO04 a : addressMapper04.list2("1201")) {
+            log.debug("{}", a);
+        }
+    }
 
 }

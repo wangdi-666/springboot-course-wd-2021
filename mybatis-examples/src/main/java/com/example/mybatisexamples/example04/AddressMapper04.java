@@ -22,4 +22,13 @@ public interface AddressMapper04 extends BaseMapper<Address> {
             "where a.detail=#{detail}")
     List<AddressDTO04> list(String detail);
 
+    @Results(value = {
+            @Result(column = "u.create_time", property = "userCreateTime"),
+            @Result(column = "a.id", property = "id"),
+            @Result(column = "a.create_time", property = "addressCreateTime"),
+    })
+    @Select("select * from address a join user u " +
+            "on u.id = a.user_id " +
+            "where a.detail=#{detail}")
+    List<AddressDTO04> list2(String detail);
 }
