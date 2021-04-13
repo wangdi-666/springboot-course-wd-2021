@@ -12,15 +12,14 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-@TableName("user")
-public class User {
+@TableName("address")
+public class Address {
     private Long id;
 
-    private String name;
+    private String detail;
 
-    private String company;
+    private Long userId;
 
-    // FieldStrategy.NEVER 不更新字段，由数据库维护
     @TableField(updateStrategy = FieldStrategy.NEVER)
     private LocalDateTime createTime;
 

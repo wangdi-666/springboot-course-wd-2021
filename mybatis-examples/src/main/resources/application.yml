@@ -2,11 +2,11 @@ spring:
   application:
     name: mybatis-examples
   datasource:
-    url: 'jdbc:mysql://114.116.213.241:3306/2046204600?
+    url: 'jdbc:mysql://114.116.213.241:3306/2018224468?
           createDatabaseIfNotExist=true
           &serverTimezone=Asia/Shanghai'
-    username: 2046204600
-    password: 2046204600
+    username: 2018224468
+    password: 2018224468
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialization-mode: always
 

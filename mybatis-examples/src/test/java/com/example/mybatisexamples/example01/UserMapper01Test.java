@@ -19,8 +19,8 @@ public class UserMapper01Test {
     @Test
     public void addUser_test() {
         User user = new User();
-        user.setId(666L);
-        user.setName("haha");
+        user.setId(2L);
+        user.setName("wd2");
         user.setCompany("nefu");
         userMapper01.insert(user);
     }
@@ -37,7 +37,7 @@ public class UserMapper01Test {
 
     @Test
     public void get_test() {
-        User user = userMapper01.get(2L);
+        User user = userMapper01.get(1L);
         log.debug("{}/{}",user.getName(),user.getUpdateTime());
     }
 }
