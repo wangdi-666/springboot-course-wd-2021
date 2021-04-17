@@ -1,8 +1,6 @@
 package com.example.mybatisexamples.example03;
 
 import com.example.mybatisexamples.entity.Address;
-import com.example.mybatisexamples.entity.User;
-import com.example.mybatisexamples.example02.UserMapper02;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-import java.util.Map;
 
 
 @SpringBootTest
@@ -34,4 +30,5 @@ public class AddDataTest {
         address.setUserId(1381799076500688898L);
         addData.insert(address);
     }
+
 }
