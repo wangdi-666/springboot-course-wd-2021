@@ -18,6 +18,8 @@
         <module>mybatis-examples</module>
         <module>spring-examples</module>
         <module>springmvc-examples</module>
+        <module>cache-examples</module>
+        <module>redis-examples</module>
     </modules>
 
 </project>

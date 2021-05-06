@@ -19,8 +19,8 @@ public class UserMapper01Test {
     @Test
     public void addUser_test() {
         User user = new User();
-        user.setId(2L);
-        user.setName("wd2");
+        user.setId(3L);
+        user.setName("wd3");
         user.setCompany("nefu");
         userMapper01.insert(user);
     }
